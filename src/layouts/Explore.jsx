@@ -14,6 +14,7 @@ const Explore = () => {
   const [productList, setProductList] = useState([
     {
       id: 1,
+      url : '/products/tshirt',
       src: "/assets/images/t-shirt.jpg",
       alt: "t-shirt",
       title: "Black T-Shirt",
@@ -25,6 +26,7 @@ const Explore = () => {
 
     {
       id: 2,
+      url : '/products/jeans',
       src: "/assets/images/jeans.jpg",
       alt: "jeans",
       title: "Blue jeans",
@@ -36,6 +38,7 @@ const Explore = () => {
 
     {
       id: 3,
+      url : '/products/shoes',
       src: "/assets/images/shoes.jpg",
       alt: "shoes",
       title: "Orange Shoes",
@@ -60,6 +63,7 @@ const Explore = () => {
           {productList.map((product) => (
             <SwiperSlide className="cards-slide" key={product.id}>
               <Card
+                url={product.url}
                 src={product.src}
                 alt={product.alt}
                 title={product.title}

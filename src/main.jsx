@@ -64,7 +64,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 firstColor={detail.firstColor}
                 secondColor={detail.secondColor}
                 thirdColor={detail.thridColor}
-                url={'/products/tshirt'}
+                url={detail.url}
               />
             }
           />
