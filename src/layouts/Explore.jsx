@@ -14,7 +14,7 @@ const Explore = () => {
   const [productList, setProductList] = useState([
     {
       id: 1,
-      url : '/products/tshirt',
+      url: "/products/tshirt",
       src: "/assets/images/t-shirt.jpg",
       alt: "t-shirt",
       title: "Black T-Shirt",
@@ -26,7 +26,7 @@ const Explore = () => {
 
     {
       id: 2,
-      url : '/products/jeans',
+      url: "/products/jeans",
       src: "/assets/images/jeans.jpg",
       alt: "jeans",
       title: "Blue jeans",
@@ -38,7 +38,7 @@ const Explore = () => {
 
     {
       id: 3,
-      url : '/products/shoes',
+      url: "/products/shoes",
       src: "/assets/images/shoes.jpg",
       alt: "shoes",
       title: "Orange Shoes",
@@ -53,7 +53,7 @@ const Explore = () => {
     <div className="explore-container">
       <h2> Explore </h2>
       <div className="slider-section">
-        <Swiper
+      <Swiper
           className="cards-slider"
           loop={true}
           spaceBetween={0}
@@ -87,22 +87,3 @@ const Explore = () => {
 };
 
 export default Explore;
-
-{
-  /* <SwiperSlide className="cards-slide">
-<Card
-  src={"/assets/images/t-shirt.jpg"}
-  alt={"t-shirt"}
-  title={"Black T-Shirt"}
-  description={"Description"}
-  price={250.0}
-  add={<GoPlus />}
-/>
-</SwiperSlide>
-<SwiperSlide className="cards-slide">
-<Card />
-</SwiperSlide>
-<SwiperSlide className="cards-slide">
-<Card />
-</SwiperSlide> */
-}
